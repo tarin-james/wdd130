@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+p,h1,h2{
+    color: aliceblue;
+}
+img{
+    border-radius: 50%;
+    width: 450px;
+    height: 300px;
+}
