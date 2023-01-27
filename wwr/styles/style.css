@@ -1,0 +1,114 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #a1cdf1   ;
+    --secondary-color: #ffd166 ;
+    --accent1-color: #377771;
+    --accent2-color: #1d2d44;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Sofia Sans Semi Condensed";
+    --paragraph-font: "Sofia Sans Extra Condensed", Helvetica, sans-serif;
+    
+    --header-color: #1D2D44;  
+    --body: white;
+    --background-color: #ffd16681;
+  }
+
+#content {
+max-width: 1600px;
+margin: 0 auto;
+}
+nav a {
+text-align: center;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+body {
+    background-color: var(--body); 
+}
+header {
+    background-color: var(--header-color);
+}
+nav a:hover {
+    background-color: var(--primary-color);
+}
+.book, .join {
+    background-color: var(--secondary-color);
+}
+.book:hover, .join:hover {
+    background-color: var(--primary-color);
+}
+#background {
+    background-color: var(--secondary-color);
+}
+.msg {
+    background-color: var(--secondary-color);
+}
+footer {
+    background-color: var(--header-color);
+}
+nav a {
+    background-color: var(--accent1-color);
+}
+nav a:hover {
+    background-color: var(--primary-color);
+}
+.home-title {
+    background-color: var(--secondary-color);
+}
+h4 {
+    background-color: var(--primary-color);
+}
+.msg h2 {
+    background-color: var(--secondary-color);
+}
+.msg p {
+    background-color: var(--primary-color);
+}
+footer a {
+    background-color: var(--accent1-color);
+}
+footer a:hover {
+    background-color: var(--primary-color);
+}
+.logo {
+    aspect-ratio: 1/1;
+    width: 80px
+}
+.icon {
+    width: 80px;
+}
+#hero-img {
+    width: 100%;
+}
+nav a {
+    text-align: center;
+    color: var(--body);
+    text-decoration: none;
+}
+.book, .join {
+    text-align: center;
+    color: var(--body);
+    text-decoration: none;
+}
+footer a {
+    text-align: center;
+    color: var(--body);
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.2em;
+} 
+footer p a:hover {
+    text-decoration: underline;
+} 
