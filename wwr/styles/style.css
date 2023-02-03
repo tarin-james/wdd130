@@ -1,28 +1,36 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@500&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #a1cdf1   ;
     --secondary-color: #ffd166 ;
     --accent1-color: #377771;
     --accent2-color: #1d2d44;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Sofia Sans Semi Condensed";
-    --paragraph-font: "Sofia Sans Extra Condensed", Helvetica, sans-serif;
     
     --header-color: #1D2D44;  
     --body: white;
     --background-color: #ffd16681;
+
+    --heading-font: "Sofia Sans Semi Condensed", Helvetica, sans-serif;
+    --paragraph-font: "Sofia Sans Extra Condensed", Helvetica, sans-serif;
   }
 
+#logo_link {
+    padding-top: 5px;
+}
 #content {
 max-width: 1600px;
 margin: 0 auto;
 }
 nav a {
 text-align: center;
+padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: var(--heading-font);
 }
 .button-box {
     text-align: center;
@@ -35,15 +43,26 @@ main section {
 }
 body {
     background-color: var(--body); 
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: var(--header-color);
+    font-family: var(--heading-font);
 }
 nav a:hover {
     background-color: var(--primary-color);
 }
 .book, .join {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    text-align: center;
+    color: var(--body);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: var(--primary-color);
@@ -53,9 +72,14 @@ nav a:hover {
 }
 .msg {
     background-color: var(--secondary-color);
+    line-height: 1.5em;
+    padding: 35px;
+    font-size: 18px;
 }
 footer {
     background-color: var(--header-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 nav a {
     background-color: var(--accent1-color);
@@ -65,15 +89,22 @@ nav a:hover {
 }
 .home-title {
     background-color: var(--secondary-color);
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     background-color: var(--primary-color);
+}
+h2 {
+    margin: 0;
 }
 .msg h2 {
     background-color: var(--secondary-color);
 }
 .msg p {
     background-color: var(--primary-color);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer a {
     background-color: var(--accent1-color);
@@ -87,6 +118,7 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -96,19 +128,28 @@ nav a {
     color: var(--body);
     text-decoration: none;
 }
-.book, .join {
-    text-align: center;
-    color: var(--body);
-    text-decoration: none;
-}
 footer a {
     text-align: center;
     color: var(--body);
     text-decoration: none;
+    font-family: var(--heading-font);
 }
 footer p {
     font-size: 1.2em;
+    color: white;
 } 
 footer p a:hover {
     text-decoration: underline;
 } 
+footer .social img {  
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
+}
