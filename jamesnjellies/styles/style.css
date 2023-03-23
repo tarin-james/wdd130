@@ -128,18 +128,11 @@ footer .connect {
   margin: 0;
   font-family: var(--heading-font);
 }
-.words {
+.container {
   display: grid;
   grid-template-columns: repeat(12,1fr);
 }
-.words img {
-  grid-column: 9/12;
-  border: 5px solid var(--secondary-color);
-  border-radius: 10px;
-  margin: 10px 10px;
-  width: 100%;
-}
-.words p {
+.container p {
   grid-column: 1/8;
   text-align: center;
   margin: 10px 10px;
@@ -148,6 +141,55 @@ footer .connect {
   border: 5px solid var(--secondary-color);
   font-family: var(--paragraph-font);
   font-size: 18px;
+}
+
+/* Overlay Styling  */
+
+.image-container {
+  position: relative;
+  width: 100%;
+  grid-column: 9/12;
+  border: 5px solid var(--secondary-color);
+  border-radius: 10px;
+  margin: 10px 10px;
+  aspect-ratio: 1/1;
+}
+
+.plum {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--another-color);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  border-radius: 5px;
+}
+
+.image-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
@@ -176,10 +218,10 @@ footer .connect {
   footer {
       margin-top: 25px;
   }
-  .words p {
+  .container p {
     grid-column: 1/13;
   }
-  .words img {
+  .container img {
     grid-column: 1/13;
     max-height: 300px;
     max-width: 300px;
