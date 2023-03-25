@@ -2,7 +2,7 @@
 /* --secondary-color: #A33B20 ;
  --primary-color: #F1AB86  */
 :root {
-  --primary-color: #A33B20   ;
+  --primary-color: #cd6e56   ;
   --secondary-color: #ffd5ca ;
   --accent1-color: #E15A97;
   --accent2-color: #F4FFF8;
@@ -143,7 +143,7 @@ footer .connect {
   font-size: 18px;
 }
 
-/* Overlay Styling  */
+
 
 .image-container {
   position: relative;
@@ -226,4 +226,104 @@ footer .connect {
     max-height: 300px;
     max-width: 300px;
   }
+}
+
+/* Contact page styling */
+form {
+  margin: 50px auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  background-color: #fff5f2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+button {
+  margin-left: 0.5em;
+}
+#feedback {
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  font-family: var(--heading-font);
+  color: #F4FFF8;
+  
+}
+.contact-us {
+  text-align: center;
+  font-family: var(--heading-font);
+}
+#important-stuff {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(5,1fr);
+  background-color: var(--primary-color);
+  margin: 20px 50px;
+  border-radius: 15px;
+}
+.ASAP {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--heading-font);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 10px 150px;
+
+}
+.form {
+  grid-column: 2;
+  grid-row: 2/6;
+}
+.message {
+  grid-row: 1/6;
+  grid-column: 1;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 40px;
+  font-family: var(--paragraph-font);
+  font-size: medium;
 }
